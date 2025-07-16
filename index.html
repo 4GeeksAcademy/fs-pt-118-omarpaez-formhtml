@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Formulario HTML5</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <form>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Payment form example</h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-5 col-lg-5 d-flex flex-column">
+                                <label class="fw-normal fs-6 pb-1" for="card">Card #</label>
+                                <input class="form-control border border-2 rounded-1 px-2 py-1" type="text" name="card"
+                                    id="card" placeholder="XXXXXXXXXXXXXXXX" />
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column">
+                                <label class="fw-normal fs-6 pb-1" for="cvc">CVC #</label>
+                                <input class="form-control border border-2 rounded-1 px-2 py-1" type="text" name="cvc"
+                                    id="cvc" placeholder="0000" />
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 ">
+                                <label class="fw-normal fs-6 pb-1 " for="amount">Amount</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text border border-0 bg-white ps-0">$</span>
+                                    <input type="text" class="form-control rounded-start-1"
+                                        aria-label="Amount (to the nearest dollar)">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column">
+                                <label class="fw-normal fs-6 pb-1" for="firtsName">Firts Name</label>
+                                <input class="form-control border border-2 rounded-1 px-2 py-1" type="text"
+                                    name="firtsName" id="firtsName" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column">
+                                <label class="fw-normal fs-6 pb-1" for="lastName">Last Name</label>
+                                <input class="form-control border border-2 rounded-1 px-2 py-1" type="text"
+                                    name="lastName" id="lastName" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column mt-3">
+                                <label class="fw-normal fs-6 pb-1" for="city">City</label>
+                                <input class="form-control border border-2 rounded-1 px-2 py-1" type="text" name="city"
+                                    id="city" />
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column mt-3">
+                                <label class="fw-normal fs-6 pb-1" for="city">State</label>
+                                <select class="form-select" size="2" aria-label="Size 2 select example">
+                                    <option class="bg-white" selected>Pick a state</option>
+                                    <option value="1">ALAVA</option>
+                                    <option value="2">ALBACETE</option>
+                                    <option value="3">ALICANTE</option>
+                                    <option value="4">ALMERIA</option>
+                                    <option value="5">ASTURIAS</option>
+                                    <option value="6">AVILA</option>
+                                    <option value="7">BADAJOZ</option>
+                                    <option value="8">BARCELONA</option>
+                                    <option value="9">BURGOS</option>
+                                    <option value="10">CACERES</option>
+                                    <option value="11">CADIZ</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3 d-flex flex-column mt-3">
+                                <label class="fw-normal fs-6 pb-1" for="code">Postal Code</label>
+                                <input class="form-control border border-2 rounded-1 px-2 py-1" type="text" name="code"
+                                    id="code" />
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column mt-3">
+                                <label class="fw-normal fs-6 pb-1" for="code">We accept:</label>
+                                <div class="d-flex bg-secondary rounded-1 ps-3 pt-1">
+                                    <div class="form-check form-check-inline  ">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1" checked>
+                                        <label class="form-check-label" for="inlineRadio1">
+                                            <span class="fa-brands fa-cc-mastercard text-white"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">
+                                            <span class="fa-brands fa-cc-visa text-white"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">
+                                            <span class="fa-brands fa-cc-diners-club text-white"></span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio3">
+                                            <span class="fa-brands fa-cc-amex text-white"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column mt-3">
+                                <label class="fw-normal fs-6 pb-1" for="code">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <span id="passwordHelpInline" class="form-text">
+                                    Add any notes here.
+                                </span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-footer text-body-secondary text-end">
+                    <input type="reset" class="btn btn-secondary" value="Cancel">
+                    <input type="submit" class="btn btn-primary" value="Send">
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
